@@ -84,12 +84,13 @@ a { text-decoration: none;  color: #444;}
 }
 
 .aside p { color: #9f9f9f}
+
 .blog_items { 
     display: flex;
     justify-content: center;
     line-height: 24px;
     margin-top: 20px;
-    margin-bottom: 30px
+    margin-bottom: 20px
 }
 
 .images_bitcoins img{ 
