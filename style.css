@@ -8,7 +8,7 @@ body {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.87);
   font-family: "Montserrat", sans-serif;
-  line-height: 1.8;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
 }
@@ -58,12 +58,108 @@ ul {
 
 .bannier {
   background: no-repeat right center /cover url("images/bg_blog.jpg");
-  height:500px;
+  height:450px;
 }
 
 .main {
+  float: left;
+  background-color: #fff;
+  width: calc(100% - 375px);
 
 }
 .side_bar {
+  float: right;
+  background-color: #FBFBFB;
+  width: 375px;
+  padding: 40px;
+  font-size: 17px;
 
 }
+
+.side_bar_title {
+  font: size 30px;
+  color: #000;
+  margin: 15px 0;
+}
+.side_bar_title:first-child {
+  margin-top: 0;
+}
+
+.side_bar ul  {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side_bar li {
+  padding: 6px 0;
+
+}
+
+.side_bar li:first-child {
+  padding-top: 0;
+}
+.side_bar li:last-child {
+  padding-top: 0;
+}
+
+.side_bar a {
+  text-decoration: none;
+  color: #9F9F9F;
+}
+.side_bar a:hover {
+    text-decoration: underline;
+    color: #5e5d5d;
+}
+
+.side_bar hr {
+  border: none;
+  background: #c4c4c4;
+  height: 1px;
+  margin: 50px 0;
+}
+
+.footer {
+  clear: both;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
