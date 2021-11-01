@@ -1,198 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-    box-sizing: border-box;
-    margin : 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
-    height: 100vh;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
 }
 
-ul { list-style-type: none; }
-
-a { text-decoration: none;  color: #444;}
-
-a:hover { text-decoration: underline}
-
-/* header */
-.navbar_top {
-    background-attachment: fixed;
-    background: rgb(252, 250, 250);
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    font-size: 18px;
-    color: #444;
-    z-index: 2;
+ul {
+  list-style-type: none;
 }
 
-
-.list ul {
-    display: flex;
-    flex-wrap: wrap;
+.top_bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #fff;
+  padding: 30px;
 }
 
-.list ul li { padding-left: 20px; }
-
-.nav_gauche { margin-left: 50px;}
-.nav_droite { margin-right: 20px; }
-
-.items_gauche:hover { text-decoration: underline; color:#444;}
-
-.cover_img { 
-    position: relative;
-    top: -2px;
-    background: url(images/img_cover.jpg);
-    width: 100%;
-    height: 300px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
+.top_bar nav {
+  float: left;
 }
 
-.cover_img .block_text { 
-    color: #fff; 
-    margin-top: 80px; 
-    font-weight: bold;
-
+.top_bar .social_media {
+  float: right;
 }
 
-.block_text h1 { font-size:40px;}
-
-.block_text .btn_redmore { 
-    background: rgb(241, 148, 110);
-    padding: 10px;
-    color : inherit;
-    text-transform:  uppercase;
+.top_bar nav a {
+  color: #9f9f9f;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 53px;
+  line-height: 23px;
 }
 
-.main_article { 
-    font-size: 17px;
-    display: flex;
-    justify-content: space-between;
+.top_bar nav a:hover,
+.top_bar nav a.active {
+  color: #000;
 }
 
-.article {
-    width: 80%;
+.social_media a {
+   padding: 0 13px;
+    opacity: 0.5
 }
-.aside { 
-    width: 20%;
-    padding-left: 30px;
-    background-color: #fbfbfb;
-    height: 100vh;
+.social_media a:hover {
+    opacity: 1;
 }
 
-.aside p { color: #9f9f9f}
-
-.blog_items { 
-    display: flex;
-    justify-content: center;
-    line-height: 24px;
-    margin-top: 20px;
-    margin-bottom: 20px
+.bannier {
+  background: no-repeat right center /cover url("images/bg_blog.jpg");
+  height:500px;
 }
 
-.images_bitcoins img{ 
-    height:200px;
-    padding-right: 20px;
+.main {
+
 }
-
-.date_de_publication { 
-    font-size: 12px;
-    color: #9f9f9f
-    
-}
-
-.footer {
-    height: 150px;
-    width: 100%;
-    border-top: 1px solid #333;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #444;
-}
-
-.media_social { display: flex; font-size: 25px; color: #444}
-.media_social_items {
-    margin-right: 30px;
-    padding: 7px;
-    transition: 1s;
-    border-radius: 10px;
-}
-
-.media_social_items:hover {
-    background-color: rgb(19, 15, 15);
-    color: #fff;
-    
-}
-
-@media screen and (max-width: 1024px){
-    .aside {height: 50%}
-}
-
-@media screen and (max-width: 978px){
-
-    .cover_img {
-        height: 400px;
-    }
-    
-    .main_article { 
-        font-size: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        overflow: hidden;
-    }
-    .article {
-        width: 100%;
-    }
-
-    .aside { 
-        width: 100%;
-        height: 200px;
-        display: flex;
-        padding-left: 30px;
-    }
-
-    
-}
-
-@media screen and (max-width: 716px){
-
-    .navbar_top {
-        padding: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        font-size: 15px;
-    }
-
-    .nav_gauche { margin-left: 0px;}
-    .nav_droite { margin-right: 10px; display: flex; justify-content: center;}
-    .cover_img { height: 300px}
-
-    .blog_items {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        font-size: 12px;
-    }
-
-    .blog_items img{
-        width: 80%;
-        height: auto;;
-    }
-    
-    .footer {
-        text-align: center;
-        font-size: 12px;
-        height: auto;
-    }
+.side_bar {
 
 }
